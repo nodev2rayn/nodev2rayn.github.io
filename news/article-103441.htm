@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://nodev2rayn.github.io/news/article-103441.htm" />
+    <title>全面解析V2Ray文件夹结构与配置方法</title>
+        <meta name="description" content="在现代网络世界中，随着网络安全和自由上网需求的不断增长，V2Ray作为一款强大的网络代理工具，逐渐成为了许多互联网用户首选的解决方案。尤其在一些网络限制较为严苛的地区，V2Ray能够通过灵活的配置，帮" />
+        <link rel="icon" href="/assets/website/img/clash_nyanpasu/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="免费V2rayN机场订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://nodev2rayn.github.io/news/article-103441.htm" />
+    <meta property="og:site_name" content="免费V2rayN机场订阅中文网" />
+    <meta property="og:title" content="全面解析V2Ray文件夹结构与配置方法" />
+    <meta property="og:image" content="https://nodev2rayn.github.io/uploads/20240728/8284706c2a2ccb85cfaf67b35146de82.webp" />
+        <meta property="og:release_date" content="2025-04-24T09:18:28" />
+    <meta property="og:updated_time" content="2025-04-24T09:18:28" />
+        <meta property="og:description" content="在现代网络世界中，随着网络安全和自由上网需求的不断增长，V2Ray作为一款强大的网络代理工具，逐渐成为了许多互联网用户首选的解决方案。尤其在一些网络限制较为严苛的地区，V2Ray能够通过灵活的配置，帮" />
+        
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0,  user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="全面解析V2Ray文件夹结构与配置方法">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <!-- Favicon Icon -->
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/venobox.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/plugin_theme_css.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/responsive.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- modernizr js -->
+    <script src="/assets/website/js/frontend/clash_nyanpasu/modernizr-2.8.3.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ1EXDT5Z1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TZ1EXDT5Z1');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <div class="em40_header_area_main">
+        <div class="tx_top2_relative">
+            <div class="all_header_abs">
+                <div class="techsold-main-menu one_page menu4 heading_style_4 witr_h_h6">
+                    <div class="techsold_nav_area transprent-menu scroll_fixed bdbar">
+                        <div class="container">
+                            <div class="row logo-left">
+                                <div class="col-xl-3 col-lg-3 col-md-2 col-sm-12">
+                                    <div class="logo">
+                                                                                <a href="/">
+                                            免费V2rayN                                        </a>
+                                                                            </div>
+                                </div>
+                                <div class="col-xl-9 col-lg-9 col-md-10 col-sm-12">
+                                    <nav class="techsold_menu">
+                                        <ul class="sub-menu">
+                                                                                        <li><a href="/">首页</a></li>
+                                                                                        <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                                        <li><a href="/news/">新闻资讯</a></li>
+                                                                                        <li><a href="/client.htm">客户端</a></li>
+                                                                                    </ul>
+                                    </nav>
+                                    <!-- MAIN MENU -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="mobile_logo_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mobilemenu_con">
+                        <div class="mobile_menu_logo text-center">
+                                                        <a href="/">
+                                Clash Nyanpasu
+                            </a>
+                                                    </div>
+                        <div class="mobile_menu_option">
+                            <div class="mobile_menu_o mobile_opicon">
+                                <i class="icofont-navigation-menu openclass"></i>
+                            </div>
+                            <div class="mobile_menu_inner mobile_p">
+                                <div class="mobile_menu_content">
+                                    <div class="mobile_menu_logo text-center">
+                                                                                <a href="/">
+                                            Clash Nyanpasu
+                                        </a>
+                                                                            </div>
+                                    <div class="menu_area mobile-menu">
+                                        <nav class="techsold_menu">
+                                            <ul class="sub-menu">
+                                                                                                <li><a href="/">首页</a></li>
+                                                                                                <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                                                <li><a href="/news/">新闻资讯</a></li>
+                                                                                                <li><a href="/client.htm">客户端</a></li>
+                                                                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="mobile_menu_o mobile_cicon">
+                                        <i class="icofont-close closeclass"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile_overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Mobile Menu -->
+    <!-- breadcumb area -->
+    <div class="breadcumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 txtc  text-center ccase">
+                    <div class="brpt brptsize">
+                        <h1 class="brcrumb_title">全面解析V2Ray文件夹结构与配置方法</h1>
+                    </div>
+                    <div class="breadcumb-inner">
+                        <ul>
+                            <li><a href="/">首页</a></li>
+                            <li><a href="/news/">新闻资讯</a></li>
+                            <li>-<span class="current">正文</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End breadcumb area -->
+    <!-- about area -->
+    <div class="ts_about_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="23" data-end="201" class="">在现代网络世界中，随着网络安全和自由上网需求的不断增长，<strong data-start="51" data-end="60">V2Ray</strong>作为一款强大的网络代理工具，逐渐成为了许多互联网用户首选的解决方案。尤其在一些网络限制较为严苛的地区，V2Ray能够通过灵活的配置，帮助用户实现高效、安全、快速的网络访问。本文将深入解析V2Ray的文件夹结构、功能，并详细讲解如何进行配置，以帮助用户更好地利用这一工具提升上网体验。</p>
+<h2 data-start="203" data-end="221" class="">一、V2Ray文件夹的基本结构</h2>
+<p data-start="223" data-end="334" class="">V2Ray作为一款强大的网络代理工具，其文件夹结构也具备了一定的复杂性和高度的可定制性。为了便于管理和配置，V2Ray将相关文件和配置文件存储在特定的文件夹中。了解这些文件的作用及其配置方法，是高效使用V2Ray的第一步。</p>
+<h3 data-start="336" data-end="358" class="">1. <strong data-start="343" data-end="358">config.json</strong></h3>
+<p data-start="360" data-end="504" class=""><code data-start="360" data-end="373">config.json</code>是V2Ray的核心配置文件，几乎所有的配置内容都需要在这个文件中进行设置。用户可以通过编辑<code data-start="418" data-end="431">config.json</code>来配置不同的代理规则、传输协议、加密方式等，完全满足个人或组织的网络需求。无论是配置出站代理、入站代理，还是定义路由规则，这个文件都是必不可少的。</p>
+<h3 data-start="506" data-end="526" class="">2. <strong data-start="513" data-end="526">geoip.dat</strong></h3>
+<p data-start="528" data-end="652" class=""><code data-start="528" data-end="539">geoip.dat</code>文件是V2Ray中用于地理位置识别的数据库文件。它包含了全球各地区的IP地址和地理位置数据，V2Ray利用这些数据进行智能路由，确保数据流量经过最佳的服务器节点。这一功能尤其对于需要根据IP地址进行流量路由的用户来说至关重要。</p>
+<h3 data-start="654" data-end="677" class="">3. <strong data-start="661" data-end="677">routing.json</strong></h3>
+<p data-start="679" data-end="802" class=""><code data-start="679" data-end="693">routing.json</code>文件是V2Ray中的路由配置文件，用户可以在该文件中定义不同的路由规则。通过配置该文件，用户可以将不同的流量分配到不同的服务器或网络路径上。这对于需要细粒度控制流量的用户尤为重要，尤其是在多种代理策略或不同网络环境下。</p>
+<h3 data-start="804" data-end="822" class="">4. <strong data-start="811" data-end="822">log 文件夹</strong></h3>
+<p data-start="824" data-end="934" class=""><code data-start="824" data-end="829">log</code>文件夹是V2Ray中的日志存储目录。V2Ray会将运行时的日志文件存储在这个文件夹中，记录包括运行状态、错误信息、网络流量等信息。通过查看这些日志，用户可以了解V2Ray的运行状态、定位潜在问题并进行故障排查。</p>
+<h2 data-start="936" data-end="952" class="">二、V2Ray文件夹的功能</h2>
+<h3 data-start="954" data-end="965" class="">1. 配置管理</h3>
+<p data-start="967" data-end="1116" class="">V2Ray的核心功能之一就是配置管理。通过<code data-start="988" data-end="1001">config.json</code>文件，用户可以实现个性化的网络配置。例如，用户可以选择不同的传输协议（如VMess、Shadowsocks、SOCKS等）、设定代理规则、调整加密方式等。对于每个用户来说，合理配置V2Ray能够大幅提升上网速度、安全性以及稳定性。</p>
+<h3 data-start="1118" data-end="1129" class="">2. 日志记录</h3>
+<p data-start="1131" data-end="1247" class="">通过<code data-start="1133" data-end="1138">log</code>文件夹，V2Ray将运行期间的所有日志记录下来。日志记录不仅仅是问题排查的重要工具，它还能够提供网络状况、代理请求的成功率、带宽使用情况等有价值的数据。在进行系统调优时，分析日志能够帮助用户找出性能瓶颈，优化网络连接。</p>
+<h3 data-start="1249" data-end="1260" class="">3. 路由控制</h3>
+<p data-start="1262" data-end="1388" class=""><code data-start="1262" data-end="1276">routing.json</code>文件允许用户自定义流量的路由规则。V2Ray通过智能路由系统，根据用户的配置自动选择最优的网络路径，将流量导向合适的服务器。例如，用户可以根据IP段、域名或其他条件来定制流量的走向。这对于大流量的用户或者企业级用户尤其重要。</p>
+<h2 data-start="1390" data-end="1407" class="">三、如何配置V2Ray文件夹</h2>
+<p data-start="1409" data-end="1478" class="">配置V2Ray并不是一件复杂的事，特别是对于那些有一定技术基础的用户。以下是V2Ray文件夹配置的具体步骤，帮助用户实现自定义的代理设置。</p>
+<h3 data-start="1480" data-end="1498" class="">步骤一：下载和解压V2Ray</h3>
+<p data-start="1500" data-end="1619" class="">首先，用户需要从V2Ray的官方网站下载最新版本的V2Ray工具包。下载完成后，解压到指定文件夹。在解压后，V2Ray会创建一个文件夹，其中包含了<code data-start="1573" data-end="1586">config.json</code>、<code data-start="1587" data-end="1598">geoip.dat</code>、<code data-start="1599" data-end="1613">routing.json</code>等核心文件。</p>
+<h3 data-start="1621" data-end="1635" class="">步骤二：编辑配置文件</h3>
+<h4 data-start="1637" data-end="1660" class="">1. 打开config.json文件</h4>
+<p data-start="1662" data-end="1715" class=""><code data-start="1662" data-end="1675">config.json</code>是V2Ray的核心配置文件。打开该文件后，用户可以根据需要进行不同的配置。例如：</p>
+<ul data-start="1717" data-end="1880">
+<li data-start="1717" data-end="1770" class="" style="">
+<p data-start="1719" data-end="1770" class=""><strong data-start="1719" data-end="1738">出站代理（outbounds）</strong>：配置代理服务器及其相关信息，包括服务器地址、端口、加密方式等。</p>
+</li>
+<li data-start="1771" data-end="1821" class="" style="">
+<p data-start="1773" data-end="1821" class=""><strong data-start="1773" data-end="1791">入站代理（inbounds）</strong>：配置V2Ray的监听端口，允许客户端连接到V2Ray服务。</p>
+</li>
+<li data-start="1822" data-end="1880" class="" style="">
+<p data-start="1824" data-end="1880" class=""><strong data-start="1824" data-end="1839">路由（routing）</strong>：在该部分，用户可以添加不同的路由规则，决定哪些流量使用代理，哪些流量不使用代理。</p>
+</li>
+</ul>
+<p data-start="1882" data-end="1912" class="">通过编辑这些配置，用户可以根据自己的网络需求进行个性化设置。</p>
+<h4 data-start="1914" data-end="1935" class="">2. 配置geoip.dat文件</h4>
+<p data-start="1937" data-end="2042" class=""><code data-start="1937" data-end="1948">geoip.dat</code>文件通常是由V2Ray自动生成和更新的，用户不需要手动修改。该文件主要用于实现智能路由，在基于地理位置的流量管理中起到至关重要的作用。如果您需要使用区域路由功能，可以确保该文件的最新版本。</p>
+<h4 data-start="2044" data-end="2068" class="">3. 配置routing.json文件</h4>
+<p data-start="2070" data-end="2112" class="">在<code data-start="2071" data-end="2085">routing.json</code>文件中，用户可以添加和修改路由规则。具体来说，您可以：</p>
+<ul data-start="2114" data-end="2208">
+<li data-start="2114" data-end="2154" class="" style="">
+<p data-start="2116" data-end="2154" class=""><strong data-start="2116" data-end="2130">设置域名或IP段匹配</strong>：根据特定的域名或IP段，将流量导向指定的代理。</p>
+</li>
+<li data-start="2155" data-end="2208" class="" style="">
+<p data-start="2157" data-end="2208" class=""><strong data-start="2157" data-end="2169">设置默认路由规则</strong>：用户可以指定默认路由，确保没有匹配到其他规则的流量通过默认的代理服务器转发。</p>
+</li>
+</ul>
+<h3 data-start="2210" data-end="2225" class="">步骤三：启动V2Ray</h3>
+<p data-start="2227" data-end="2289" class="">在完成配置文件的修改后，用户需要启动V2Ray服务。进入V2Ray的安装目录，打开命令行工具，执行以下命令来启动V2Ray：</p>
+<pre class="overflow-visible!" data-start="2291" data-end="2335"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>bash ./v2ray -config config.json
+</span></span></code></div></div></pre>
+<p data-start="2337" data-end="2373" class="">如果配置正确，V2Ray将开始运行并加载您设置的所有代理规则和路由配置。</p>
+<h2 data-start="2375" data-end="2391" class="">四、常见问题解答（FAQ）</h2>
+<h3 data-start="2393" data-end="2418" class="">Q1: V2Ray文件夹中有哪些重要文件？</h3>
+<p data-start="2420" data-end="2556" class="">A1: V2Ray文件夹中最重要的文件包括<code data-start="2441" data-end="2454">config.json</code>（配置文件）、<code data-start="2461" data-end="2472">geoip.dat</code>（地理位置数据文件）、<code data-start="2483" data-end="2497">routing.json</code>（路由规则配置文件）和<code data-start="2508" data-end="2513">log</code>文件夹（日志存储文件）。这些文件共同作用，确保V2Ray正常运行并满足用户的网络需求。</p>
+<h3 data-start="2558" data-end="2579" class="">Q2: 如何修改V2Ray的配置？</h3>
+<p data-start="2581" data-end="2669" class="">A2: 用户可以通过文本编辑器打开<code data-start="2598" data-end="2611">config.json</code>文件，修改其中的参数来实现不同的网络配置需求。例如，可以配置出站和入站代理，设置传输协议和加密方式，添加路由规则等。</p>
+<h3 data-start="2671" data-end="2693" class="">Q3: V2Ray的日志文件在哪里？</h3>
+<p data-start="2695" data-end="2770" class="">A3: V2Ray的日志文件通常存储在<code data-start="2714" data-end="2719">log</code>文件夹中。用户可以通过查看这些日志，了解V2Ray的运行状态，检查代理是否正常，或者排查运行中的问题。</p>
+<h3 data-start="2772" data-end="2789" class="">Q4: 如何添加路由规则？</h3>
+<p data-start="2791" data-end="2881" class="">A4: 用户可以在<code data-start="2800" data-end="2814">routing.json</code>文件中添加自定义的路由规则，具体的配置格式可以参考V2Ray的官方文档。用户可以根据IP、域名等条件设置路由规则，精确控制流量的走向。</p>
+<h2 data-start="2883" data-end="2890" class="">五、结论</h2>
+<p data-start="2892" data-end="3019" class="">通过对V2Ray文件夹结构和配置方法的深入解析，我们可以看到，V2Ray不仅仅是一个简单的代理工具，它提供了强大的配置和路由控制功能，能够满足不同用户的网络需求。无论是普通用户还是企业用户，合理配置V2Ray都能够有效提升网络访问的速度、安全性与稳定性。</p>
+<p data-start="3021" data-end="3103" class="">希望本文能够帮助您更好地理解V2Ray的工作原理，并为您的上网体验提供有价值的参考。在享受自由上网的同时，记得定期更新配置文件，检查日志，确保网络连接的高效和安全。</p>
+<hr data-start="3105" data-end="3108" class="">
+<h3 data-start="3110" data-end="3120" class="">✨语言点评：</h3>
+<p data-start="3122" data-end="3264" class="">这篇文章结构清晰，内容详细，从V2Ray文件夹的基础知识到具体配置方法都有充分的讲解。每一部分内容都通过实际的操作步骤和技术背景进行了详细解释，确保读者能够轻松理解并实施配置。同时，文章语言简洁明了，便于不同层次的读者理解，尤其对于那些刚接触V2Ray的用户，提供了很好的指导和帮助。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-103440.htm">手机免费科学上网全攻略：如何突破网络限制，畅享自由上网</a></p>
+                                        <p>下一个：<a href="/news/article-104116.htm">K2P荒野无灯：科学上网的最佳选择与安装配置全解析</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-102606.htm" title="科学上网中的UDP加速技术详解">科学上网中的UDP加速技术详解</a></li>
+                        <li class="py-2"><a href="/news/article-95983.htm" title="全面掌控手机网络自由：详解如何启用Clash全局代理提升安全与体验">全面掌控手机网络自由：详解如何启用Clash全局代理提升安全与体验</a></li>
+                        <li class="py-2"><a href="/news/article-101000.htm" title="Clash 蓝的全面指南：安装与配置教程">Clash 蓝的全面指南：安装与配置教程</a></li>
+                        <li class="py-2"><a href="/news/article-90731.htm" title="全面解析Clash座杆：科学上网与网络加速的强大利器">全面解析Clash座杆：科学上网与网络加速的强大利器</a></li>
+                        <li class="py-2"><a href="/news/article-97363.htm" title="全面详解Shadowrocket安卓使用教程：从安装到进阶技巧一站通">全面详解Shadowrocket安卓使用教程：从安装到进阶技巧一站通</a></li>
+                        <li class="py-2"><a href="/news/article-89938.htm" title="Xray 配置 v2rayNG 全面指南：导入、使用与优化">Xray 配置 v2rayNG 全面指南：导入、使用与优化</a></li>
+                        <li class="py-2"><a href="/news/article-89204.htm" title="IPv6能科学上网吗？全面解读与常见问题解答">IPv6能科学上网吗？全面解读与常见问题解答</a></li>
+                        <li class="py-2"><a href="/news/article-88610.htm" title="PennyJob科学上网全攻略：使用技巧与配置方法">PennyJob科学上网全攻略：使用技巧与配置方法</a></li>
+                        <li class="py-2"><a href="/news/article-101764.htm" title="通过 Clash 打造流畅电视盒子体验：全面指南与使用技巧">通过 Clash 打造流畅电视盒子体验：全面指南与使用技巧</a></li>
+                        <li class="py-2"><a href="/news/article-103440.htm" title="手机免费科学上网全攻略：如何突破网络限制，畅享自由上网">手机免费科学上网全攻略：如何突破网络限制，畅享自由上网</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">48</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer area -->
+<div class="witrfm_area">
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer_style_1">
+                    <div class="copy-right-text text-center">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p>
+                            免费V2rayN机场订阅中文网 版权所有
+                            <br />
+                            Powered by WordPress
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Include All JS -->
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery-3.5.1.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/bootstrap.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/isotope.pkgd.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/slick.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/imagesloaded.pkgd.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/venobox.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery.appear.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery.knob.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/theme-pluginjs.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery.meanmenu.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/ajax-mail.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/theme.js"></script>
+<script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-# 免费V2rayN | 4月23日23M/S|免费Shadowrocket/V2ray/SSR/Clash订阅节点  更新时间 2025-04-23 09:08:21
+# 免费V2rayN | 4月27日22.5M/S|免费SSR/Clash/V2ray/Shadowrocket订阅节点  更新时间 2025-04-27 08:57:17
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://nodev2rayn.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### Clash订阅链接
 
-- https://nodev2rayn.github.io/uploads/2025/04/0-20250423.yaml
-- https://nodev2rayn.github.io/uploads/2025/04/1-20250423.yaml
-- https://nodev2rayn.github.io/uploads/2025/04/2-20250423.yaml
-- https://nodev2rayn.github.io/uploads/2025/04/3-20250423.yaml
-- https://nodev2rayn.github.io/uploads/2025/04/4-20250423.yaml
+- https://nodev2rayn.github.io/uploads/2025/04/0-20250427.yaml
+- https://nodev2rayn.github.io/uploads/2025/04/1-20250427.yaml
+- https://nodev2rayn.github.io/uploads/2025/04/2-20250427.yaml
+- https://nodev2rayn.github.io/uploads/2025/04/3-20250427.yaml
+- https://nodev2rayn.github.io/uploads/2025/04/4-20250427.yaml
 
 ### V2ray订阅链接
 
-- https://nodev2rayn.github.io/uploads/2025/04/0-20250423.txt
-- https://nodev2rayn.github.io/uploads/2025/04/1-20250423.txt
-- https://nodev2rayn.github.io/uploads/2025/04/2-20250423.txt
-- https://nodev2rayn.github.io/uploads/2025/04/3-20250423.txt
-- https://nodev2rayn.github.io/uploads/2025/04/4-20250423.txt
+- https://nodev2rayn.github.io/uploads/2025/04/0-20250427.txt
+- https://nodev2rayn.github.io/uploads/2025/04/1-20250427.txt
+- https://nodev2rayn.github.io/uploads/2025/04/2-20250427.txt
+- https://nodev2rayn.github.io/uploads/2025/04/3-20250427.txt
+- https://nodev2rayn.github.io/uploads/2025/04/4-20250427.txt
 
 ### Sing-box订阅链接
 
-- https://nodev2rayn.github.io/uploads/2025/04/20250423.json
+- https://nodev2rayn.github.io/uploads/2025/04/20250427.json
 
 ## 更多clash节点订阅 ：
 
