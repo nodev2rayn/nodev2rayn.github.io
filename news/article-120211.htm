@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://nodev2rayn.github.io/news/article-120211.htm" />
+    <title>iOS端科学上网利器：Kali Shadowrocket全方位使用教程与配置实战指南</title>
+        <meta name="description" content="在日益严峻的网络环境下，如何保障个人隐私、绕过网络限制、实现稳定高速的互联网连接，成为了越来越多用户关注的焦点。尤其是对于iOS设备用户而言，选择一款功能强大、配置灵活的科学上网工具尤为重要。
+在诸多" />
+        <link rel="icon" href="/assets/website/img/clash_nyanpasu/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="免费V2rayN机场订阅中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://nodev2rayn.github.io/news/article-120211.htm" />
+    <meta property="og:site_name" content="免费V2rayN机场订阅中文网" />
+    <meta property="og:title" content="iOS端科学上网利器：Kali Shadowrocket全方位使用教程与配置实战指南" />
+    <meta property="og:image" content="https://nodev2rayn.github.io/uploads/20240728/3ab2f3cc422032ef4631043af874556d.webp" />
+        <meta property="og:release_date" content="2025-05-31T09:17:04" />
+    <meta property="og:updated_time" content="2025-05-31T09:17:04" />
+        <meta property="og:description" content="在日益严峻的网络环境下，如何保障个人隐私、绕过网络限制、实现稳定高速的互联网连接，成为了越来越多用户关注的焦点。尤其是对于iOS设备用户而言，选择一款功能强大、配置灵活的科学上网工具尤为重要。
+在诸多" />
+        
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0,  user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="iOS端科学上网利器：Kali Shadowrocket全方位使用教程与配置实战指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <!-- Favicon Icon -->
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/venobox.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/plugin_theme_css.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/website/css/clash_nyanpasu/responsive.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- modernizr js -->
+    <script src="/assets/website/js/frontend/clash_nyanpasu/modernizr-2.8.3.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ1EXDT5Z1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TZ1EXDT5Z1');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <div class="em40_header_area_main">
+        <div class="tx_top2_relative">
+            <div class="all_header_abs">
+                <div class="techsold-main-menu one_page menu4 heading_style_4 witr_h_h6">
+                    <div class="techsold_nav_area transprent-menu scroll_fixed bdbar">
+                        <div class="container">
+                            <div class="row logo-left">
+                                <div class="col-xl-3 col-lg-3 col-md-2 col-sm-12">
+                                    <div class="logo">
+                                                                                <a href="/">
+                                            免费V2rayN                                        </a>
+                                                                            </div>
+                                </div>
+                                <div class="col-xl-9 col-lg-9 col-md-10 col-sm-12">
+                                    <nav class="techsold_menu">
+                                        <ul class="sub-menu">
+                                                                                        <li><a href="/">首页</a></li>
+                                                                                        <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                                        <li><a href="/news/">新闻资讯</a></li>
+                                                                                        <li><a href="/client.htm">客户端</a></li>
+                                                                                    </ul>
+                                    </nav>
+                                    <!-- MAIN MENU -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="mobile_logo_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mobilemenu_con">
+                        <div class="mobile_menu_logo text-center">
+                                                        <a href="/">
+                                Clash Nyanpasu
+                            </a>
+                                                    </div>
+                        <div class="mobile_menu_option">
+                            <div class="mobile_menu_o mobile_opicon">
+                                <i class="icofont-navigation-menu openclass"></i>
+                            </div>
+                            <div class="mobile_menu_inner mobile_p">
+                                <div class="mobile_menu_content">
+                                    <div class="mobile_menu_logo text-center">
+                                                                                <a href="/">
+                                            Clash Nyanpasu
+                                        </a>
+                                                                            </div>
+                                    <div class="menu_area mobile-menu">
+                                        <nav class="techsold_menu">
+                                            <ul class="sub-menu">
+                                                                                                <li><a href="/">首页</a></li>
+                                                                                                <li><a href="/paid-subscribe/">推荐机场</a></li>
+                                                                                                <li><a href="/news/">新闻资讯</a></li>
+                                                                                                <li><a href="/client.htm">客户端</a></li>
+                                                                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="mobile_menu_o mobile_cicon">
+                                        <i class="icofont-close closeclass"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile_overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Mobile Menu -->
+    <!-- breadcumb area -->
+    <div class="breadcumb-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 txtc  text-center ccase">
+                    <div class="brpt brptsize">
+                        <h1 class="brcrumb_title">iOS端科学上网利器：Kali Shadowrocket全方位使用教程与配置实战指南</h1>
+                    </div>
+                    <div class="breadcumb-inner">
+                        <ul>
+                            <li><a href="/">首页</a></li>
+                            <li><a href="/news/">新闻资讯</a></li>
+                            <li>-<span class="current">正文</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End breadcumb area -->
+    <!-- about area -->
+    <div class="ts_about_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                                    <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail xcblog-blog-detail-defined">
+                    
+<p data-start="46" data-end="142">在日益严峻的网络环境下，如何保障个人隐私、绕过网络限制、实现稳定高速的互联网连接，成为了越来越多用户关注的焦点。尤其是对于iOS设备用户而言，选择一款功能强大、配置灵活的科学上网工具尤为重要。</p>
+<p data-start="144" data-end="294">在诸多网络代理工具中，<strong data-start="155" data-end="176">Kali Shadowrocket</strong> 凭借其稳定性、协议兼容性以及卓越的用户体验，成为iPhone/iPad用户科学上网的不二之选。本文将全面剖析 Kali Shadowrocket 的使用方法、安装步骤与配置技巧，并结合实际操作场景，为你搭建一套属于自己的加密网络通道。</p>
+<hr data-start="296" data-end="299">
+<h2 data-start="301" data-end="329">一、为什么选择Kali Shadowrocket？</h2>
+<p data-start="331" data-end="469">很多用户初次听到这个名字，可能会将“Kali”误认为是Kali Linux的衍生品，事实上这里的“Kali Shadowrocket”是 Shadowrocket 的定制版本，在应用分发平台中存在多个类似命名的变体，但其核心功能仍以<strong data-start="447" data-end="466">多协议支持、稳定连接、隐私保护</strong>为主。</p>
+<p data-start="471" data-end="488"><strong data-start="471" data-end="488">你可能会关心以下几个问题：</strong></p>
+<ul data-start="490" data-end="537">
+<li data-start="490" data-end="502">
+<p data-start="492" data-end="502">它支持哪些协议？</p>
+</li>
+<li data-start="503" data-end="514">
+<p data-start="505" data-end="514">配置是否复杂？</p>
+</li>
+<li data-start="515" data-end="528">
+<p data-start="517" data-end="528">是否适合新手使用？</p>
+</li>
+<li data-start="529" data-end="537">
+<p data-start="531" data-end="537">付费值得吗？</p>
+</li>
+</ul>
+<p data-start="539" data-end="570">答案是：<strong data-start="543" data-end="570">它非常值得拥有，尤其适合注重体验的iOS用户。</strong></p>
+<hr data-start="572" data-end="575">
+<h2 data-start="577" data-end="605">二、Kali Shadowrocket核心功能解析</h2>
+<h3 data-start="607" data-end="619">1. 多协议支持</h3>
+<p data-start="621" data-end="710">支持包括 <strong data-start="626" data-end="676">Shadowsocks、Vmess、Trojan、Socks5、HTTP、WireGuard</strong> 在内的多种主流代理协议，几乎覆盖市面上所有主流的科学上网节点类型。</p>
+<h3 data-start="712" data-end="726">2. 灵活的规则配置</h3>
+<p data-start="728" data-end="803">你可以根据自己的需求，自定义<strong data-start="742" data-end="755">分流规则、应用过滤</strong>、海外IP策略等。比如，设置只有国外网站通过代理，而国内网站保持直连，有效减少不必要的资源占用。</p>
+<h3 data-start="805" data-end="818">3. 数据加密传输</h3>
+<p data-start="820" data-end="876">全程使用安全的加密方式传输数据，即使你在咖啡馆、机场、酒店等开放 Wi-Fi 环境中上网，也能保障隐私不被窥探。</p>
+<h3 data-start="878" data-end="894">4. 实时日志与连接统计</h3>
+<p data-start="896" data-end="946">应用内提供详细的连接日志、节点测速、实时带宽监控等功能，帮助用户随时掌控网络状态，定位问题更加轻松。</p>
+<hr data-start="948" data-end="951">
+<h2 data-start="953" data-end="984">三、安装 Kali Shadowrocket 的正确姿势</h2>
+<blockquote data-start="986" data-end="1060">
+<p data-start="988" data-end="1060"><strong data-start="988" data-end="1060">注意：Kali Shadowrocket 是一款付费应用，需使用非中国大陆 Apple ID 登录 App Store 进行购买与下载。</strong></p>
+</blockquote>
+<h3 data-start="1062" data-end="1081">步骤一：切换 Apple ID</h3>
+<ol data-start="1083" data-end="1181">
+<li data-start="1083" data-end="1110">
+<p data-start="1086" data-end="1110">打开 App Store，点击头像退出当前账号；</p>
+</li>
+<li data-start="1111" data-end="1148">
+<p data-start="1114" data-end="1148">使用 <strong data-start="1117" data-end="1144">美区、港区或其他支持该应用的 Apple ID</strong> 登录；</p>
+</li>
+<li data-start="1149" data-end="1181">
+<p data-start="1152" data-end="1181">可通过朋友提供，或在网络平台寻找共享账号（注意账号安全）；</p>
+</li>
+</ol>
+<h3 data-start="1183" data-end="1196">步骤二：购买与下载</h3>
+<ol data-start="1198" data-end="1328">
+<li data-start="1198" data-end="1265">
+<p data-start="1201" data-end="1265">搜索 “<strong data-start="1205" data-end="1221">Shadowrocket</strong>” 或 “<strong data-start="1226" data-end="1247">Kali Shadowrocket</strong>”（不同分发版本命名可能略有不同）；</p>
+</li>
+<li data-start="1266" data-end="1306">
+<p data-start="1269" data-end="1306">应用图标一般是一个火箭形状，价格在 $2.99 - $4.99 美元之间；</p>
+</li>
+<li data-start="1307" data-end="1328">
+<p data-start="1310" data-end="1328">完成支付后点击“获取”开始下载安装；</p>
+</li>
+</ol>
+<hr data-start="1330" data-end="1333">
+<h2 data-start="1335" data-end="1363">四、Kali Shadowrocket 的配置详解</h2>
+<p data-start="1365" data-end="1419">安装完毕后，首次打开 Kali Shadowrocket，会出现权限申请与系统 VPN 配置提示，按需确认。</p>
+<h3 data-start="1421" data-end="1434">1. 添加节点配置</h3>
+<h4 data-start="1436" data-end="1449">方法一：手动输入</h4>
+<ol data-start="1451" data-end="1561">
+<li data-start="1451" data-end="1465">
+<p data-start="1454" data-end="1465">打开 App 主界面；</p>
+</li>
+<li data-start="1466" data-end="1520">
+<p data-start="1469" data-end="1520">点击右上角 “+” 号，选择协议类型（Shadowsocks / Vmess / Trojan 等）；</p>
+</li>
+<li data-start="1521" data-end="1549">
+<p data-start="1524" data-end="1549">输入服务器地址、端口、密码/UUID、加密方式等；</p>
+</li>
+<li data-start="1550" data-end="1561">
+<p data-start="1553" data-end="1561">命名并保存配置；</p>
+</li>
+</ol>
+<h4 data-start="1563" data-end="1576">方法二：扫码添加</h4>
+<ol data-start="1578" data-end="1637">
+<li data-start="1578" data-end="1606">
+<p data-start="1581" data-end="1606">获取二维码（可通过订阅服务商、TG 群组等获取）；</p>
+</li>
+<li data-start="1607" data-end="1621">
+<p data-start="1610" data-end="1621">点击 “扫码” 图标；</p>
+</li>
+<li data-start="1622" data-end="1637">
+<p data-start="1625" data-end="1637">扫描后自动导入节点信息；</p>
+</li>
+</ol>
+<h4 data-start="1639" data-end="1654">方法三：订阅链接导入</h4>
+<ol data-start="1656" data-end="1737">
+<li data-start="1656" data-end="1689">
+<p data-start="1659" data-end="1689">获取订阅链接（一般格式为 <a rel="noopener" target="_new" class="cursor-pointer">https://.../sub）；</a></p>
+</li>
+<li data-start="1690" data-end="1706">
+<p data-start="1693" data-end="1706">在设置页面点击 “订阅”；</p>
+</li>
+<li data-start="1707" data-end="1718">
+<p data-start="1710" data-end="1718">添加链接并命名；</p>
+</li>
+<li data-start="1719" data-end="1737">
+<p data-start="1722" data-end="1737">可设为自动更新，便于节点维护；</p>
+</li>
+</ol>
+<h3 data-start="1739" data-end="1752">2. 设置代理规则</h3>
+<p data-start="1754" data-end="1793">Kali Shadowrocket 提供强大的规则管理能力，默认规则如下几种：</p>
+<ul data-start="1795" data-end="1897">
+<li data-start="1795" data-end="1814">
+<p data-start="1797" data-end="1814"><strong data-start="1797" data-end="1805">全局模式</strong>：所有流量走代理；</p>
+</li>
+<li data-start="1815" data-end="1836">
+<p data-start="1817" data-end="1836"><strong data-start="1817" data-end="1825">直连模式</strong>：所有流量不通过代理；</p>
+</li>
+<li data-start="1837" data-end="1866">
+<p data-start="1839" data-end="1866"><strong data-start="1839" data-end="1847">规则模式</strong>：由预设规则决定哪些走代理，哪些直连；</p>
+</li>
+<li data-start="1867" data-end="1897">
+<p data-start="1869" data-end="1897"><strong data-start="1869" data-end="1881">绕过大陆与局域网</strong>：常见分流方案，智能识别 IP；</p>
+</li>
+</ul>
+<p data-start="1899" data-end="1986">你还可以从 GitHub 等平台下载专业的 <strong data-start="1921" data-end="1929">规则文件</strong>，如 ACL4SSR、ConnersHua 的配置，导入到 Kali Shadowrocket 实现更精细化控制。</p>
+<h3 data-start="1988" data-end="2001">3. 启动代理服务</h3>
+<ul data-start="2003" data-end="2059">
+<li data-start="2003" data-end="2020">
+<p data-start="2005" data-end="2020">在主界面切换你需要使用的节点；</p>
+</li>
+<li data-start="2021" data-end="2036">
+<p data-start="2023" data-end="2036">点击右上角的“开关”按钮；</p>
+</li>
+<li data-start="2037" data-end="2059">
+<p data-start="2039" data-end="2059">状态栏出现 VPN 标志即表示连接成功；</p>
+</li>
+</ul>
+<hr data-start="2061" data-end="2064">
+<h2 data-start="2066" data-end="2080">五、实用技巧与注意事项</h2>
+<h3 data-start="2082" data-end="2098">技巧一：测速选择最优节点</h3>
+<p data-start="2100" data-end="2144">在订阅节点列表页面，长按节点名称，选择“测速”，可以快速识别当前网络条件下最快的服务器。</p>
+<h3 data-start="2146" data-end="2160">技巧二：区分应用代理</h3>
+<p data-start="2162" data-end="2205">你可以指定某些 App 走代理，某些 App 直连（如淘宝、微信），避免不必要的干扰。</p>
+<p data-start="2207" data-end="2230">路径为：<strong data-start="2211" data-end="2230">配置 → 策略 → 分应用代理</strong></p>
+<h3 data-start="2232" data-end="2250">技巧三：开启 IPv6 支持</h3>
+<p data-start="2252" data-end="2302">若运营商支持 IPv6，Shadowrocket 也可以针对 IPv6 流量进行控制，提升访问效率。</p>
+<hr data-start="2304" data-end="2307">
+<h2 data-start="2309" data-end="2325">六、常见问题 FAQ 解答</h2>
+<p data-start="2327" data-end="2403"><strong data-start="2327" data-end="2358">Q1：Kali Shadowrocket 是免费的么？</strong><br data-start="2358" data-end="2361">
+A1：不免费。该应用在 App Store 售价约为 3-5 美元，购买后终身可用。</p>
+<p data-start="2405" data-end="2428"><strong data-start="2405" data-end="2422">Q2：连接失败是什么原因？</strong><br data-start="2422" data-end="2425">
+A2：</p>
+<ul data-start="2429" data-end="2487">
+<li data-start="2429" data-end="2440">
+<p data-start="2431" data-end="2440">检查节点是否失效；</p>
+</li>
+<li data-start="2441" data-end="2460">
+<p data-start="2443" data-end="2460">检查 UUID、密码是否填写正确；</p>
+</li>
+<li data-start="2461" data-end="2487">
+<p data-start="2463" data-end="2487">网络环境是否阻断了 VPN（尝试使用不同协议）；</p>
+</li>
+</ul>
+<p data-start="2489" data-end="2539"><strong data-start="2489" data-end="2508">Q3：可以多个节点同时使用吗？</strong><br data-start="2508" data-end="2511">
+A3：不支持多连接，但可以设置备用节点，断线时快速切换。</p>
+<p data-start="2541" data-end="2607"><strong data-start="2541" data-end="2558">Q4：节点是自己搭建的吗？</strong><br data-start="2558" data-end="2561">
+A4：你可以选择自建（需要服务器）、购买、或使用公益节点，但建议选择可信来源，避免信息泄露。</p>
+<hr data-start="2609" data-end="2612">
+<h2 data-start="2614" data-end="2625">七、安全使用建议</h2>
+<ul data-start="2627" data-end="2746">
+<li data-start="2627" data-end="2663">
+<p data-start="2629" data-end="2663">尽量使用 TLS 加密协议（如 Vmess+TLS、Trojan）；</p>
+</li>
+<li data-start="2664" data-end="2694">
+<p data-start="2666" data-end="2694">不要在使用代理时登录网银、支付软件等涉及敏感信息的服务；</p>
+</li>
+<li data-start="2695" data-end="2721">
+<p data-start="2697" data-end="2721">定期更换节点，清除 DNS 缓存，避免信息泄露；</p>
+</li>
+<li data-start="2722" data-end="2746">
+<p data-start="2724" data-end="2746">不要公开分享自己的订阅链接，避免被滥用封禁；</p>
+</li>
+</ul>
+<hr data-start="2748" data-end="2751">
+<h2 data-start="2753" data-end="2793">总结：Kali Shadowrocket，不只是一个工具，更是你的隐私护盾</h2>
+<p data-start="2795" data-end="2914">Kali Shadowrocket 以其卓越的协议支持能力、强大的规则配置功能、优秀的用户界面，成为 iOS 平台中少有的顶级科学上网工具。通过本教程，你可以轻松完成从下载、配置到使用的全过程，真正实现信息自由、安全匿名、全球畅游的目标。</p>
+<p data-start="2916" data-end="2985">在这个被“墙”困住的数字世界中，一款优质的工具，也许就是你与外界之间最后的通道。而 Kali Shadowrocket，正是那扇门的钥匙。</p>
+<hr data-start="2987" data-end="2990">
+<h2 data-start="2992" data-end="2999">精彩点评</h2>
+<blockquote data-start="3001" data-end="3039">
+<p data-start="3003" data-end="3039"><strong data-start="3003" data-end="3039">“在信息茧房之外，工具并不只是工具，更是一种对认知边界的挑战。”</strong></p>
+</blockquote>
+<p data-start="3041" data-end="3192" data-is-last-node="" data-is-only-node="">Kali Shadowrocket 就是这样一款突破边界的工具。它不仅仅帮助你连接互联网，更帮助你连接思想、连接世界。它以一种极致简约却异常强大的方式，诠释了“技术改变生活”的真正含义。也许你只是想看一段视频、读一篇文章、查一个资料，但你会惊喜地发现——每一次自由的连接，都是通往更广阔世界的一次冒险。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-119903.htm">突破网络限制：代理端口科学上网的终极指南</a></p>
+                                        <p>下一个：<a href="/news/article-120528.htm">手把手教你用小米路由器R3G打造V2Ray科学上网神器</a></p>
+                                    </div>
+                                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-112175.htm" title="网游加速器与V2ray冲突现象解析及解决方案">网游加速器与V2ray冲突现象解析及解决方案</a></li>
+                        <li class="py-2"><a href="/news/article-118664.htm" title="深入理解 V2Ray 源码架构：从零开始的代理协议设计探索">深入理解 V2Ray 源码架构：从零开始的代理协议设计探索</a></li>
+                        <li class="py-2"><a href="/news/article-114676.htm" title="Shadowrocket全面使用与更新指南：iOS平台科学上网工具的终极解析">Shadowrocket全面使用与更新指南：iOS平台科学上网工具的终极解析</a></li>
+                        <li class="py-2"><a href="/news/article-120853.htm" title="SSH隧道科学上网实战指南：原理、配置与优化全解析">SSH隧道科学上网实战指南：原理、配置与优化全解析</a></li>
+                        <li class="py-2"><a href="/news/article-111777.htm" title="Clash 免费梯子全面指南：从安装到常见问题解答">Clash 免费梯子全面指南：从安装到常见问题解答</a></li>
+                        <li class="py-2"><a href="/news/article-117757.htm" title="全面解读Shadowrocket SSR更新：突破限制的利器再升级">全面解读Shadowrocket SSR更新：突破限制的利器再升级</a></li>
+                        <li class="py-2"><a href="/news/article-119281.htm" title="深入解析Clash测试延迟：成因剖析与实用优化策略全攻略">深入解析Clash测试延迟：成因剖析与实用优化策略全攻略</a></li>
+                        <li class="py-2"><a href="/news/article-119576.htm" title="小火箭使用V2Ray节点全攻略：从入门到精通的科学上网指南">小火箭使用V2Ray节点全攻略：从入门到精通的科学上网指南</a></li>
+                        <li class="py-2"><a href="/news/article-120211.htm" title="iOS端科学上网利器：Kali Shadowrocket全方位使用教程与配置实战指南">iOS端科学上网利器：Kali Shadowrocket全方位使用教程与配置实战指南</a></li>
+                        <li class="py-2"><a href="/news/article-112847.htm" title="如何使用UBNT设备实现全局科学上网：详细配置指南">如何使用UBNT设备实现全局科学上网：详细配置指南</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2025-06/" title="2025-06 归档">2025-06</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">34</span> <a href="/date/2025-05/" title="2025-05 归档">2025-05</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer area -->
+<div class="witrfm_area">
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer_style_1">
+                    <div class="copy-right-text text-center">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p>
+                            免费V2rayN机场订阅中文网 版权所有
+                            <br />
+                            Powered by WordPress
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Include All JS -->
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery-3.5.1.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/bootstrap.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/isotope.pkgd.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/slick.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/imagesloaded.pkgd.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/venobox.min.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery.appear.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery.knob.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/theme-pluginjs.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/jquery.meanmenu.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/ajax-mail.js"></script>
+<script src="/assets/website/js/frontend/clash_nyanpasu/theme.js"></script>
+<script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
