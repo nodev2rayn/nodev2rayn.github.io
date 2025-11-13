@@ -266,34 +266,14 @@ Shadowrocket在App Store下载需付费，但代理节点可以自由选择免�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的混淆参数该如何填写？</h5></div>
-    <div class="panel-body">
-        SSR 混淆参数位于节点配置中，通常选择如 tls1.2_ticket_auth 或 http_simple。参数字段可以自定义伪装主机或路径，以模拟正常流量行为，从而提高隐蔽性和抗封锁能力。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的混淆插件有什么作用？</h5></div>
-    <div class="panel-body">
-        混淆插件用于伪装流量，使其看起来像普通的 HTTP 或 TLS 请求。常见类型有 plain、tls1.2_ticket_auth 等。合理设置混淆能有效降低被识别的风险，提升连接成功率。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 如何防止规则文件冲突导致分流异常？</h5></div>
     <div class="panel-body">
         合理组织规则顺序，将更具体的规则放在前面，通配规则放在末尾；使用 rule-providers 分离不同来源的规则，避免重复条目，并在变更后使用日志或 debug 模式检验分流是否按预期生效。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow TUN 模式适合哪些应用？</h5></div>
+    <div class="panel-heading"><h5>SSR 的混淆参数该如何填写？</h5></div>
     <div class="panel-body">
-        TUN 模式拦截系统 IP 层流量，实现全局代理。适合游戏、视频、浏览器等全局应用，保证所有流量走节点，提高网络稳定性和速度，比普通 SOCKS5 代理覆盖范围更广。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 如何通过策略组优化访问速度？</h5></div>
-    <div class="panel-body">
-        策略组允许用户将节点按延迟、地域或用途分组。结合路由规则，V2Ray 会自动选择最优节点处理流量，提升访问速度并降低延迟，尤其在访问海外网站时效果明显。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 模式在移动网络下表现如何？</h5></div>
-    <div class="panel-body">
-        XTLS 降低加密开销，减少握手次数，适合高延迟或不稳定的移动网络。结合策略组和多出口节点，可提升访问速度和连接稳定性，确保用户体验流畅。<hr />    </div>
+        SSR 混淆参数位于节点配置中，通常选择如 tls1.2_ticket_auth 或 http_simple。参数字段可以自定义伪装主机或路径，以模拟正常流量行为，从而提高隐蔽性和抗封锁能力。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Nekobox 导入 Clash 订阅后规则丢失，可能原因？</h5></div>
@@ -306,14 +286,34 @@ Shadowrocket在App Store下载需付费，但代理节点可以自由选择免�
         Sing-box 的配置使用 JSON 格式，而 Clash 采用 YAML 格式。前者更适合程序自动解析，后者更便于人工编辑。Sing-box 在性能和扩展性上有明显优势，支持更细粒度的流量控制。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS + XTLS 模式在移动网络下表现如何？</h5></div>
+    <div class="panel-body">
+        XTLS 降低加密开销，减少握手次数，适合高延迟或不稳定的移动网络。结合策略组和多出口节点，可提升访问速度和连接稳定性，确保用户体验流畅。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Netch 的透明代理适合哪些应用场景？</h5></div>
+    <div class="panel-body">
+        透明代理通过 TUN 或 WinDivert 拦截系统 IP 层流量，无需配置每个应用。适合全局科学上网、在线游戏或对局域网设备统一代理的场景。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>SSR 的混淆插件有什么作用？</h5></div>
+    <div class="panel-body">
+        混淆插件用于伪装流量，使其看起来像普通的 HTTP 或 TLS 请求。常见类型有 plain、tls1.2_ticket_auth 等。合理设置混淆能有效降低被识别的风险，提升连接成功率。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Clash 策略组如何提升节点切换效率？</h5></div>
     <div class="panel-body">
         通过策略组可设置节点优先级和分流规则，结合延迟检测功能，Clash 自动选择延迟低、稳定性高的节点处理不同流量，提高网页、视频和游戏访问速度及整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Netch 的透明代理适合哪些应用场景？</h5></div>
+    <div class="panel-heading"><h5>Mellow TUN 模式适合哪些应用？</h5></div>
     <div class="panel-body">
-        透明代理通过 TUN 或 WinDivert 拦截系统 IP 层流量，无需配置每个应用。适合全局科学上网、在线游戏或对局域网设备统一代理的场景。    </div>
+        TUN 模式拦截系统 IP 层流量，实现全局代理。适合游戏、视频、浏览器等全局应用，保证所有流量走节点，提高网络稳定性和速度，比普通 SOCKS5 代理覆盖范围更广。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 如何通过策略组优化访问速度？</h5></div>
+    <div class="panel-body">
+        策略组允许用户将节点按延迟、地域或用途分组。结合路由规则，V2Ray 会自动选择最优节点处理流量，提升访问速度并降低延迟，尤其在访问海外网站时效果明显。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -342,16 +342,16 @@ Shadowrocket在App Store下载需付费，但代理节点可以自由选择免�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2025-10-3-free-subscribe-node.htm" title="免费V2rayN | 10月3日21.8M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点订阅节点">免费V2rayN | 10月3日21.8M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-14-clash-node-daily-updates.htm" title="免费V2rayN | 10月14日22.2M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/V2ray节点订阅节点">免费V2rayN | 10月14日22.2M/S|免费Clash节点/Singbox节点/Shadowrocket节点/SSR节点/V2ray节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-22-clash-windows.htm" title="免费V2rayN | 10月22日18.6M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点订阅节点">免费V2rayN | 10月22日18.6M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Clash节点/Singbox节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-10-free-ssr-subscribe.htm" title="免费V2rayN | 10月10日18.1M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点订阅节点">免费V2rayN | 10月10日18.1M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点订阅节点</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-15-clash-node.htm" title="免费V2rayN | 10月15日22.2M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点">免费V2rayN | 10月15日22.2M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-13-clash-v2ray-ss-ssr.htm" title="免费V2rayN | 10月13日21.4M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点">免费V2rayN | 10月13日21.4M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-7-free-shadowrocket-node.htm" title="免费V2rayN | 11月7日19.6M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点">免费V2rayN | 11月7日19.6M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-19-free-subscribe-node.htm" title="免费V2rayN | 10月19日20.1M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点订阅节点">免费V2rayN | 10月19日20.1M/S|免费Singbox节点/V2ray节点/Shadowrocket节点/Clash节点/SSR节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-10-12-free-v2ray-subscribe.htm" title="免费V2rayN | 10月12日20.8M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点订阅节点">免费V2rayN | 10月12日20.8M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/V2ray节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-1-node-share.htm" title="免费V2rayN | 11月1日22M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点">免费V2rayN | 11月1日22M/S|免费SSR节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-5-clash-windows.htm" title="免费V2rayN | 11月5日22.7M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅节点">免费V2rayN | 11月5日22.7M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅节点</a></li>
                         <li class="py-2"><a href="/free-nodes/2025-10-16-free-v2ray.htm" title="免费V2rayN | 10月16日21.9M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅节点">免费V2rayN | 10月16日21.9M/S|免费Clash节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点订阅节点</a></li>
-                        <li class="py-2"><a href="/free-nodes/2025-11-3-free-node-subscribe-links.htm" title="免费V2rayN | 11月3日18.1M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点订阅节点">免费V2rayN | 11月3日18.1M/S|免费Shadowrocket节点/SSR节点/Singbox节点/V2ray节点/Clash节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-8-free-clash-subscribe.htm" title="免费V2rayN | 10月8日19.8M/S|免费Clash节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点">免费V2rayN | 10月8日19.8M/S|免费Clash节点/V2ray节点/Shadowrocket节点/SSR节点/Singbox节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-10-20-shadowrocket-node.htm" title="免费V2rayN | 10月20日21.3M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点订阅节点">免费V2rayN | 10月20日21.3M/S|免费SSR节点/V2ray节点/Clash节点/Singbox节点/Shadowrocket节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-9-clash-v2ray-ss-ssr.htm" title="免费V2rayN | 11月9日20.4M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅节点">免费V2rayN | 11月9日20.4M/S|免费Singbox节点/V2ray节点/Clash节点/Shadowrocket节点/SSR节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-10-free-high-speed-nodes.htm" title="免费V2rayN | 11月10日22.9M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点订阅节点">免费V2rayN | 11月10日22.9M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点订阅节点</a></li>
+                        <li class="py-2"><a href="/free-nodes/2025-11-13-free-ssr-subscribe.htm" title="免费V2rayN | 11月13日18.9M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点订阅节点">免费V2rayN | 11月13日18.9M/S|免费V2ray节点/SSR节点/Clash节点/Singbox节点/Shadowrocket节点订阅节点</a></li>
                     </ul>
     </div>
 </div>
@@ -363,7 +363,7 @@ Shadowrocket在App Store下载需付费，但代理节点可以自由选择免�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">7</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
+                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2025-11/" title="2025-11 归档">2025-11</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2025-10/" title="2025-10 归档">2025-10</a></h4>
