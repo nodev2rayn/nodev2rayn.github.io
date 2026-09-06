@@ -202,6 +202,41 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess AEAD 加密在安全性方面有何优势？</h5></div>
+    <div class="panel-body">
+        AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下保证节点可用，提升数据安全和连接稳定性，同时降低被检测风险，确保长期安全访问。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Sing-box 是否支持多出口自动选择？</h5></div>
+    <div class="panel-body">
+        支持。通过配置路由规则和策略组，Sing-box 可以自动判断流量类型并选择最佳出口，实现智能分流和多节点负载均衡，提高访问效率。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Quantumult X 的“分流规则”如何管理？</h5></div>
+    <div class="panel-body">
+        Quantumult X 使用策略组管理分流规则。用户可将规则文件导入应用，通过“policy group”定义不同流量走向，实现国内直连、国外代理、广告拦截等功能的自动分配。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Matsuri 节点延迟排序如何优化流量？</h5></div>
+    <div class="panel-body">
+        Matsuri 会定期测速节点延迟，并结合策略组自动选择低延迟节点。无需手动切换，确保网页、视频和游戏流量通过最优节点，提高访问速度和网络稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekoray 如何实现节点延迟自动切换？</h5></div>
+    <div class="panel-body">
+        Nekoray 支持配置策略组（Policy Group），用户可设置 URL 测试或周期检测机制，根据延迟自动选择最优节点。此功能能提升稳定性，尤其适合多线路机场订阅用户。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 是否可以手动管理多个节点？</h5></div>
+    <div class="panel-body">
+        支持。用户可以手动输入节点参数或扫描二维码导入节点，并可进行修改或删除。虽然不支持订阅自动更新，但足够满足轻量用户对节点管理和分流的基本需求。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Matsuri 如何提升节点连接效率？</h5></div>
+    <div class="panel-body">
+        Matsuri 是一个支持多协议的代理工具，强调快速连接与自动切换功能。它可以根据延迟自动选择最优节点，减少手动切换的繁琐过程，保证网络体验的流畅性。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>VLESS + Reality 与 Trojan 在性能上差异大吗？</h5></div>
     <div class="panel-body">
         两者性能相近。VLESS + Reality 伪装更自然，适合强封锁地区；Trojan 则依托标准 TLS 实现高速连接。选择取决于服务器支持与环境稳定性。<hr />    </div>
@@ -212,44 +247,9 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
         支持用户分组管理，可为不同组设置独立带宽、流量配额和节点访问权限。分组管理便于大规模用户维护，确保每个组的网络资源合理分配，提升整体管理效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 如何提升节点连接效率？</h5></div>
-    <div class="panel-body">
-        Matsuri 是一个支持多协议的代理工具，强调快速连接与自动切换功能。它可以根据延迟自动选择最优节点，减少手动切换的繁琐过程，保证网络体验的流畅性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Quantumult X 的“分流规则”如何管理？</h5></div>
-    <div class="panel-body">
-        Quantumult X 使用策略组管理分流规则。用户可将规则文件导入应用，通过“policy group”定义不同流量走向，实现国内直连、国外代理、广告拦截等功能的自动分配。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 如何实现节点延迟自动切换？</h5></div>
-    <div class="panel-body">
-        Nekoray 支持配置策略组（Policy Group），用户可设置 URL 测试或周期检测机制，根据延迟自动选择最优节点。此功能能提升稳定性，尤其适合多线路机场订阅用户。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Matsuri 节点延迟排序如何优化流量？</h5></div>
-    <div class="panel-body">
-        Matsuri 会定期测速节点延迟，并结合策略组自动选择低延迟节点。无需手动切换，确保网页、视频和游戏流量通过最优节点，提高访问速度和网络稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 是否可以手动管理多个节点？</h5></div>
-    <div class="panel-body">
-        支持。用户可以手动输入节点参数或扫描二维码导入节点，并可进行修改或删除。虽然不支持订阅自动更新，但足够满足轻量用户对节点管理和分流的基本需求。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 是否支持多出口自动选择？</h5></div>
-    <div class="panel-body">
-        支持。通过配置路由规则和策略组，Sing-box 可以自动判断流量类型并选择最佳出口，实现智能分流和多节点负载均衡，提高访问效率。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>Nekoray 如何实现节点订阅自动更新？</h5></div>
     <div class="panel-body">
-        用户可添加订阅 URL，Nekoray 定期自动下载并更新节点。这样可保持节点列表最新，有效减少手动维护，提高使用效率，同时保证网络连接稳定和可靠。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess AEAD 加密在安全性方面有何优势？</h5></div>
-    <div class="panel-body">
-        AEAD 加密可防止数据篡改、重放攻击和流量特征泄露。在高封锁环境下保证节点可用，提升数据安全和连接稳定性，同时降低被检测风险，确保长期安全访问。    </div>
+        用户可添加订阅 URL，Nekoray 定期自动下载并更新节点。这样可保持节点列表最新，有效减少手动维护，提高使用效率，同时保证网络连接稳定和可靠。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -297,16 +297,16 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-8-26-clash-node.htm" title="免费V2rayN | 8月26日21.2M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点">免费V2rayN | 8月26日21.2M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-8-21.htm" title="免费V2rayN | 8月21日22.9M/S|免费Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点">免费V2rayN | 8月21日22.9M/S|免费Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-22-clash-v2ray-ss-ssr.htm" title="免费V2rayN | 8月22日23M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Trojan节点/Clash节点订阅节点">免费V2rayN | 8月22日23M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Trojan节点/Clash节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-30-free-ssr-subscribe.htm" title="免费V2rayN | 7月30日20.5M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点订阅节点">免费V2rayN | 7月30日20.5M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-8-23.htm" title="免费V2rayN | 8月23日19.7M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点">免费V2rayN | 8月23日19.7M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-1.htm" title="免费V2rayN | 8月1日20.5M/S|免费Clash节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/V2ray节点订阅节点">免费V2rayN | 8月1日20.5M/S|免费Clash节点/Shadowrocket节点/Trojan节点/SSR节点/Singbox节点/V2ray节点订阅节点</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-8-19.htm" title="免费V2rayN | 8月19日22.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点/Trojan节点订阅节点">免费V2rayN | 8月19日22.2M/S|免费V2ray节点/Shadowrocket节点/Clash节点/SSR节点/Singbox节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-21-free-v2ray-subscribe.htm" title="免费V2rayN | 7月21日21.1M/S|免费Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Clash节点/Singbox节点订阅节点">免费V2rayN | 7月21日21.1M/S|免费Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Clash节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-20-free-ssr-subscribe.htm" title="免费V2rayN | 7月20日21.1M/S|免费V2ray节点/Singbox节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点订阅节点">免费V2rayN | 7月20日21.1M/S|免费V2ray节点/Singbox节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-28-free-node-subscribe.htm" title="免费V2rayN | 8月28日18M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/Clash节点/V2ray节点订阅节点">免费V2rayN | 8月28日18M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/Clash节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-4-free-shadowrocket-node.htm" title="免费V2rayN | 9月4日21.1M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点订阅节点">免费V2rayN | 9月4日21.1M/S|免费Singbox节点/SSR节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-8-free-ssr-subscribe.htm" title="免费V2rayN | 8月8日20M/S|免费Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点">免费V2rayN | 8月8日20M/S|免费Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-2-node-share.htm" title="免费V2rayN | 9月2日22.5M/S|免费Trojan节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点订阅节点">免费V2rayN | 9月2日22.5M/S|免费Trojan节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-12-clash-v2ray-ss-ssr.htm" title="免费V2rayN | 8月12日18.9M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点订阅节点">免费V2rayN | 8月12日18.9M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-14-free-node-subscribe.htm" title="免费V2rayN | 8月14日19.2M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点订阅节点">免费V2rayN | 8月14日19.2M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点/Clash节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-6-free-ssr-subscribe.htm" title="免费V2rayN | 8月6日19.4M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅节点">免费V2rayN | 8月6日19.4M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-high-speed-nodes-2026-8-21.htm" title="免费V2rayN | 8月21日22.9M/S|免费Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点">免费V2rayN | 8月21日22.9M/S|免费Singbox节点/Shadowrocket节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-links-2026-8-11.htm" title="免费V2rayN | 8月11日21.2M/S|免费Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点订阅节点">免费V2rayN | 8月11日21.2M/S|免费Singbox节点/Trojan节点/V2ray节点/SSR节点/Clash节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-22-clash-v2ray-ss-ssr.htm" title="免费V2rayN | 8月22日23M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Trojan节点/Clash节点订阅节点">免费V2rayN | 8月22日23M/S|免费Shadowrocket节点/SSR节点/V2ray节点/Singbox节点/Trojan节点/Clash节点订阅节点</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -318,10 +318,10 @@ IPLC、IEPL中转，点对点专线连接。高速冲浪，科学上网不二选
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                     </ul>
     </div>

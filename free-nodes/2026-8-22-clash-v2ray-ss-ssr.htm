@@ -383,39 +383,14 @@ opkg install v2ray-core
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>VLESS + XTLS 如何降低移动网络延迟？</h5></div>
+    <div class="panel-heading"><h5>Potatso Lite 可以管理多少个节点？</h5></div>
     <div class="panel-body">
-        XTLS 通过减少握手次数和加密开销降低延迟。结合策略组和多节点切换，可在高延迟或不稳定的移动网络环境中保持连接稳定，提升网页浏览、视频和游戏体验流畅度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 支持自动测速吗？</h5></div>
-    <div class="panel-body">
-        支持。Shadowrocket 可以批量测速节点延迟并标记最佳连接。用户还可设置自动切换到最低延迟节点，实现稳定高速的上网体验，尤其在网络波动较大的环境中效果明显。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 使用 WebSocket 是否有安全优势？</h5></div>
-    <div class="panel-body">
-        WebSocket 可伪装成普通 HTTP/HTTPS 流量，配合 TLS 加密，可隐藏真实通信特征，提升抗封锁能力。结合策略组使用，可保证访问速度和网络稳定性，同时增加节点安全性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 如何配置透明代理？</h5></div>
-    <div class="panel-body">
-        Mellow 通过 tun2socks 技术实现透明代理。只需在配置文件中启用该功能，系统所有网络流量都会自动转发到代理内核，用户无需手动设置系统代理参数。<hr />    </div>
+        Potatso Lite 可以管理数十个节点，适合轻量用户使用。虽然不支持批量自动更新，但可以手动添加和删除节点，结合策略组实现基本分流和管理功能。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 如何选择合适混淆提高稳定性？</h5></div>
     <div class="panel-body">
         选择混淆方式时应根据网络环境和封锁程度，例如 tls1.2_ticket_auth 可模拟 HTTPS 流量。合理组合协议和混淆可提升节点稳定性和抗封锁能力，确保长期科学上网体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Quantumult X 的“分流规则”如何管理？</h5></div>
-    <div class="panel-body">
-        Quantumult X 使用策略组管理分流规则。用户可将规则文件导入应用，通过“policy group”定义不同流量走向，实现国内直连、国外代理、广告拦截等功能的自动分配。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 可以管理多少个节点？</h5></div>
-    <div class="panel-body">
-        Potatso Lite 可以管理数十个节点，适合轻量用户使用。虽然不支持批量自动更新，但可以手动添加和删除节点，结合策略组实现基本分流和管理功能。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Mellow TUN 模式与 SOCKS5 代理有什么区别？</h5></div>
@@ -428,9 +403,34 @@ opkg install v2ray-core
         PassWall2 结合策略组和延迟检测功能，自动选择最佳节点处理网页、视频和游戏流量。无需手动切换，保证访问速度和稳定性，提升整体网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess 使用 WebSocket 是否有安全优势？</h5></div>
+    <div class="panel-body">
+        WebSocket 可伪装成普通 HTTP/HTTPS 流量，配合 TLS 加密，可隐藏真实通信特征，提升抗封锁能力。结合策略组使用，可保证访问速度和网络稳定性，同时增加节点安全性。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 的 Routing 设置可以实现什么？</h5></div>
     <div class="panel-body">
-        V2Ray 的 Routing 系统支持基于域名、IP、端口或协议的智能分流。用户可以指定特定网站直连、部分服务走代理，还能创建黑白名单，实现灵活的网络访问控制。    </div>
+        V2Ray 的 Routing 系统支持基于域名、IP、端口或协议的智能分流。用户可以指定特定网站直连、部分服务走代理，还能创建黑白名单，实现灵活的网络访问控制。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 支持自动测速吗？</h5></div>
+    <div class="panel-body">
+        支持。Shadowrocket 可以批量测速节点延迟并标记最佳连接。用户还可设置自动切换到最低延迟节点，实现稳定高速的上网体验，尤其在网络波动较大的环境中效果明显。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VLESS + XTLS 如何降低移动网络延迟？</h5></div>
+    <div class="panel-body">
+        XTLS 通过减少握手次数和加密开销降低延迟。结合策略组和多节点切换，可在高延迟或不稳定的移动网络环境中保持连接稳定，提升网页浏览、视频和游戏体验流畅度。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Quantumult X 的“分流规则”如何管理？</h5></div>
+    <div class="panel-body">
+        Quantumult X 使用策略组管理分流规则。用户可将规则文件导入应用，通过“policy group”定义不同流量走向，实现国内直连、国外代理、广告拦截等功能的自动分配。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 如何配置透明代理？</h5></div>
+    <div class="panel-body">
+        Mellow 通过 tun2socks 技术实现透明代理。只需在配置文件中启用该功能，系统所有网络流量都会自动转发到代理内核，用户无需手动设置系统代理参数。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -478,16 +478,16 @@ opkg install v2ray-core
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-8-10-node-share.htm" title="免费V2rayN | 8月10日18.6M/S|免费SSR节点/Trojan节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点">免费V2rayN | 8月10日18.6M/S|免费SSR节点/Trojan节点/Singbox节点/V2ray节点/Clash节点/Shadowrocket节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-30-free-ssr-subscribe.htm" title="免费V2rayN | 7月30日20.5M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点订阅节点">免费V2rayN | 7月30日20.5M/S|免费Shadowrocket节点/SSR节点/Clash节点/Singbox节点/V2ray节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-8-23.htm" title="免费V2rayN | 8月23日19.7M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点">免费V2rayN | 8月23日19.7M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-8-17.htm" title="免费V2rayN | 8月17日22.2M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Clash节点订阅节点">免费V2rayN | 8月17日22.2M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/V2ray节点/SSR节点/Clash节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-26-clash-node.htm" title="免费V2rayN | 8月26日21.2M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点">免费V2rayN | 8月26日21.2M/S|免费Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-16-free-v2ray.htm" title="免费V2rayN | 8月16日19.3M/S|免费Shadowrocket节点/Trojan节点/Clash节点/Singbox节点/SSR节点/V2ray节点订阅节点">免费V2rayN | 8月16日19.3M/S|免费Shadowrocket节点/Trojan节点/Clash节点/Singbox节点/SSR节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-15.htm" title="免费V2rayN | 8月15日21.5M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/Trojan节点/V2ray节点订阅节点">免费V2rayN | 8月15日21.5M/S|免费Shadowrocket节点/Clash节点/SSR节点/Singbox节点/Trojan节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-12-clash-v2ray-ss-ssr.htm" title="免费V2rayN | 8月12日18.9M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点订阅节点">免费V2rayN | 8月12日18.9M/S|免费Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点/SSR节点订阅节点</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-8-13.htm" title="免费V2rayN | 8月13日23M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点订阅节点">免费V2rayN | 8月13日23M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Singbox节点/Trojan节点/Clash节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-7-24-node-share.htm" title="免费V2rayN | 7月24日21.3M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点订阅节点">免费V2rayN | 7月24日21.3M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/V2ray节点/Clash节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-20-free-shadowrocket-node.htm" title="免费V2rayN | 8月20日18.9M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点">免费V2rayN | 8月20日18.9M/S|免费Clash节点/Singbox节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-6-free-ssr-subscribe.htm" title="免费V2rayN | 8月6日19.4M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅节点">免费V2rayN | 8月6日19.4M/S|免费Trojan节点/Singbox节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-4-free-node-subscribe.htm" title="免费V2rayN | 8月4日18.5M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点">免费V2rayN | 8月4日18.5M/S|免费SSR节点/Singbox节点/Trojan节点/Shadowrocket节点/Clash节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-28-free-node-subscribe.htm" title="免费V2rayN | 8月28日18M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/Clash节点/V2ray节点订阅节点">免费V2rayN | 8月28日18M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/Clash节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-8-free-ssr-subscribe.htm" title="免费V2rayN | 8月8日20M/S|免费Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点">免费V2rayN | 8月8日20M/S|免费Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-8-27.htm" title="免费V2rayN | 8月27日22M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Trojan节点订阅节点">免费V2rayN | 8月27日22M/S|免费Singbox节点/Clash节点/Shadowrocket节点/SSR节点/V2ray节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-8-7.htm" title="免费V2rayN | 8月7日20.3M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/SSR节点/Trojan节点订阅节点">免费V2rayN | 8月7日20.3M/S|免费Shadowrocket节点/V2ray节点/Clash节点/Singbox节点/SSR节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-8-29.htm" title="免费V2rayN | 8月29日20.1M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点">免费V2rayN | 8月29日20.1M/S|免费Clash节点/Singbox节点/V2ray节点/SSR节点/Shadowrocket节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-30-free-clash.htm" title="免费V2rayN | 8月30日18.6M/S|免费Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点订阅节点">免费V2rayN | 8月30日18.6M/S|免费Clash节点/Singbox节点/Shadowrocket节点/V2ray节点/Trojan节点/SSR节点订阅节点</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -499,10 +499,10 @@ opkg install v2ray-core
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                     </ul>
     </div>

@@ -1,4 +1,4 @@
-# 免费V2rayN | 8月30日18.9M/S|免费Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点订阅节点  更新时间 2026-08-30 10:14:23
+# 免费V2rayN | 9月6日22.6M/S|免费Singbox节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点订阅节点  更新时间 2026-09-06 01:08:46
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://nodev2rayn.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://nodev2rayn.github.io/uploads/2026/08/0-20260830.yaml
-- https://nodev2rayn.github.io/uploads/2026/08/1-20260830.yaml
-- https://nodev2rayn.github.io/uploads/2026/08/2-20260830.yaml
-- https://nodev2rayn.github.io/uploads/2026/08/3-20260830.yaml
-- https://nodev2rayn.github.io/uploads/2026/08/4-20260830.yaml
+- https://nodev2rayn.github.io/uploads/2026/09/0-20260906.yaml
+- https://nodev2rayn.github.io/uploads/2026/09/1-20260906.yaml
+- https://nodev2rayn.github.io/uploads/2026/09/2-20260906.yaml
+- https://nodev2rayn.github.io/uploads/2026/09/3-20260906.yaml
+- https://nodev2rayn.github.io/uploads/2026/09/4-20260906.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://nodev2rayn.github.io/uploads/2026/08/0-20260830.txt
-- https://nodev2rayn.github.io/uploads/2026/08/1-20260830.txt
-- https://nodev2rayn.github.io/uploads/2026/08/2-20260830.txt
-- https://nodev2rayn.github.io/uploads/2026/08/3-20260830.txt
-- https://nodev2rayn.github.io/uploads/2026/08/4-20260830.txt
+- https://nodev2rayn.github.io/uploads/2026/09/0-20260906.txt
+- https://nodev2rayn.github.io/uploads/2026/09/1-20260906.txt
+- https://nodev2rayn.github.io/uploads/2026/09/2-20260906.txt
+- https://nodev2rayn.github.io/uploads/2026/09/3-20260906.txt
+- https://nodev2rayn.github.io/uploads/2026/09/4-20260906.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://nodev2rayn.github.io/uploads/2026/08/20260830.json
+- https://nodev2rayn.github.io/uploads/2026/09/20260906.json
 
 ## 更多Clash节点订阅 ：
 
